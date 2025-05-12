@@ -23,6 +23,7 @@ export class AuthService {
           expiresIn: "1h",
         }
       );
+
       return { token };
     } catch (error) {
       throw new Error(`Internal server error: ${error}`);
